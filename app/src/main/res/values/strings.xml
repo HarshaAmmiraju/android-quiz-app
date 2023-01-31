@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Quiz Demo App</string>
+    <string name="app_details">This App is a demo app that shows how to make a simple quiz app in Android Studio using Firebase Realtime Database.</string>
+</resources>

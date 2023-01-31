@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_quiz"
+    tools:context=".QuizActivity">
+
+    <LinearLayout
+        android:id="@+id/ll3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:weightSum="1"
+        app:layout_constraintTop_toTopOf="parent"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.3"
+            android:textColor="@android:color/holo_red_dark"
+            android:textSize="20dp"
+            android:text="Time : "/>
+
+        <TextView
+            android:id="@+id/tv_timer"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.2"
+            android:textColor="@android:color/holo_green_dark"
+            android:textSize="20dp"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.3"
+            android:textColor="@android:color/holo_blue_dark"
+            android:textSize="20dp"
+            android:text="Score : "/>
+
+        <TextView
+            android:id="@+id/tv_score"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.2"
+            android:textColor="@android:color/black"
+            android:textSize="20dp"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_question"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="26dp"
+        android:textColor="@android:color/holo_blue_dark"
+        app:layout_constraintTop_toBottomOf="@id/ll3"
+        android:layout_margin="10dp"/>
+
+    <LinearLayout
+        android:id="@+id/ll1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="60dp"
+        android:weightSum="1"
+        android:layout_margin="10dp"
+        app:layout_constraintTop_toBottomOf="@id/tv_question">
+
+        <TextView
+            android:id="@+id/tv_option1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:layout_marginRight="20dp"
+            android:layout_gravity="center"
+            android:textSize="20dp"
+            android:textColor="@android:color/black"/>
+
+        <TextView
+            android:id="@+id/tv_option2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:layout_gravity="center"
+            android:textSize="20dp"
+            android:textColor="@android:color/black"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="60dp"
+        android:weightSum="1"
+        app:layout_constraintTop_toBottomOf="@id/ll1"
+        android:layout_margin="10dp">
+
+        <TextView
+            android:id="@+id/tv_option3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:layout_marginRight="20dp"
+            android:layout_gravity="center"
+            android:textSize="20dp"
+            android:textColor="@android:color/black"/>
+
+        <TextView
+            android:id="@+id/tv_option4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:layout_gravity="center"
+            android:textSize="20dp"
+            android:textColor="@android:color/black"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_validate"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:text="Validate"
+        android:textSize="20dp"
+        android:layout_margin="20dp"
+        android:background="@drawable/btn_back"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+
+    <Button
+        android:id="@+id/btn_next"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:text="Next"
+        android:textSize="20dp"
+        android:layout_margin="20dp"
+        android:background="@drawable/btn_back"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
